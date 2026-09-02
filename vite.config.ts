@@ -153,6 +153,9 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  // GitHub Pages serves this repository below /aide-entreprises/.
+  // Local and Manus deployments continue to use the root path.
+  base: process.env.GITHUB_ACTIONS ? "/aide-entreprises/" : "/",
   plugins,
   resolve: {
     alias: {

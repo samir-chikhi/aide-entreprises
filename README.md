@@ -56,3 +56,9 @@ La suite actuelle couvre le scoring, l’authentification de l’API Aides-Entre
 ## Réutilisation
 
 Ce dépôt peut servir de base à un fork ou à une intégration dans un autre projet. Pour un déploiement public, remplacer la conservation locale de l’administration par une base de données avec authentification et rôles, ajouter une journalisation des synchronisations et faire relire les conditions de licence ainsi que les mentions réglementaires.
+
+## Déploiement GitHub Pages
+
+Le workflow `.github/workflows/deploy-pages.yml` publie automatiquement le client statique après chaque push sur `main`. Pour ce dépôt, l’URL attendue est `https://samir-chikhi.github.io/aide-entreprises/` après activation de GitHub Pages dans les paramètres du dépôt ou via l’API Pages.
+
+GitHub Pages n’exécute pas Express, tRPC, OAuth, Drizzle ni les appels serveur protégés. La version publiée fonctionne donc avec le référentiel embarqué côté client. Pour activer l’authentification, la persistance, l’administration distante et les API Aides-Entreprises, il faut conserver le serveur sur un hébergement adapté et configurer l’URL d’API côté client.
