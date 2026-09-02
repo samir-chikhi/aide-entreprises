@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les décisions des 30 prochains jours</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #455A64;
+            font-family: Georgia, serif;
+            border: 1px solid #1A237E;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .eyebrow {
+            font: 700 16px ui-monospace, monospace;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .page-num {
+            font: 700 24px ui-monospace, monospace;
+            color: #1A237E;
+        }
+        .title {
+            padding-top: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+            font: 700 42px ui-monospace, monospace;
+            color: #1A237E;
+            line-height: 1.1;
+            border-bottom: 1px solid #1A237E;
+            padding-bottom: 20px;
+        }
+        .content {
+            flex-grow: 1;
+            padding-top: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .decision-card {
+            border: 1px solid #1A237E;
+            padding-top: 20px;
+            padding-left: 24px;
+            padding-right: 24px;
+            min-height: 140px;
+            background: #f7f8fc;
+        }
+        .decision-card h3 {
+            font: 700 18px ui-monospace, monospace;
+            color: #1A237E;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border-left: 4px solid #FF6D00;
+            padding-left: 12px;
+        }
+        .decision-card p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #455A64;
+        }
+        .footer {
+            padding-top: 15px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 20px;
+            font: 14px ui-monospace, monospace;
+            color: #455A64;
+            border-top: 1px solid #1A237E;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Plan d'Action Immédiat</div>
+            <div class="page-num">08</div>
+        </div>
+        <h1 class="title">Les décisions des 30 prochains jours</h1>
+        <div class="content">
+            <div class="decision-card">
+                <h3>Segment MVP</h3>
+                <p>Cibler les créations de petites activités de services et de commerce accompagnées localement.</p>
+            </div>
+            <div class="decision-card">
+                <h3>Secteurs Pilotes</h3>
+                <p>Sélectionner 3 secteurs et réunir 10 à 15 porteurs de projet pour les premiers tests utilisateurs.</p>
+            </div>
+            <div class="decision-card">
+                <h3>Partenaires</h3>
+                <p>Désigner un expert-comptable partenaire pour valider les règles de calcul et les scénarios financiers.</p>
+            </div>
+            <div class="decision-card">
+                <h3>Maquettes & Règles</h3>
+                <p>Valider le prototype UX, le dictionnaire des données et les paramètres fiscaux/sociaux français.</p>
+            </div>
+            <div class="decision-card" style="grid-column: span 2;">
+                <h3>Qualification des Ateliers</h3>
+                <p>Décider si les prestations d'accompagnement relèvent du conseil, de la formation professionnelle (DREETS/Qualiopi) ou de la domiciliation.</p>
+            </div>
+        </div>
+        <div class="footer">
+            Fabrique du Génie — Montauban, Occitanie
+        </div>
+    </div>
+</body>
+</html>

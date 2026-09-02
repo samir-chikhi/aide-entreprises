@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #455A64;
+            font-family: Georgia, serif;
+            border: 1px solid #1A237E;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding-top: 48px;
+            padding-left: 64px;
+            padding-right: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .eyebrow {
+            font: 700 16px ui-monospace, monospace;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .page-num {
+            font: 700 24px ui-monospace, monospace;
+            color: #1A237E;
+        }
+        .title {
+            padding-top: 24px;
+            padding-left: 64px;
+            padding-right: 64px;
+            font: 700 42px ui-monospace, monospace;
+            color: #1A237E;
+            line-height: 1.1;
+        }
+        .pillars {
+            padding-top: 56px;
+            padding-left: 64px;
+            padding-right: 64px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            flex-grow: 1;
+        }
+        .pillar {
+            border: 1px solid #1A237E;
+            padding-top: 32px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            background: #fcfdff;
+        }
+        .pillar i {
+            font-size: 40px;
+            color: #FF6D00;
+            margin-bottom: 24px;
+        }
+        .pillar h3 {
+            font: 700 20px ui-monospace, monospace;
+            color: #1A237E;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pillar p {
+            font-size: 17px;
+            line-height: 1.5;
+            color: #455A64;
+        }
+        .footer {
+            width: 100%;
+            padding-top: 16px;
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 24px;
+            border-top: 1px solid #1A237E;
+            font: 700 14px ui-monospace, monospace;
+            color: #455A64;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Différenciation Stratégique</div>
+            <div class="page-num">09</div>
+        </div>
+        <h1 class="title">Le facteur différenciant : la confiance</h1>
+        
+        <div class="pillars">
+            <div class="pillar">
+                <i class="fas fa-eye"></i>
+                <h3>Hypothèses Visibles</h3>
+                <p>Chaque chiffre est modifiable et justifié. L'utilisateur garde le contrôle total sur ses données d'entrée.</p>
+            </div>
+            <div class="pillar">
+                <i class="fas fa-calculator"></i>
+                <h3>Calculs Auditables</h3>
+                <p>Moteur financier transparent. Aucune "boîte noire" : les relations entre tableaux sont traçables.</p>
+            </div>
+            <div class="pillar">
+                <i class="fas fa-database"></i>
+                <h3>Données Sourcées</h3>
+                <p>Benchmarks sectoriels français datés et localisés. Références systématiques aux sources de marché.</p>
+            </div>
+            <div class="pillar">
+                <i class="fas fa-comment-dots"></i>
+                <h3>IA Explicative</h3>
+                <p>L'IA ne décide pas, elle explique. Elle aide à comprendre les impacts et à corriger les incohérences.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Fabrique du Génie — Montauban, Occitanie
+        </div>
+    </div>
+</body>
+</html>

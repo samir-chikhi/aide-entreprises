@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #455A64;
+            font-family: Georgia, serif;
+            position: relative;
+            border: 1px solid #1A237E;
+            padding-top: 40px;
+        }
+        .header {
+            padding: 0 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid #1A237E;
+            padding-bottom: 15px;
+        }
+        .eyebrow {
+            font: 700 16px ui-monospace, monospace;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .page-num {
+            font: 700 24px ui-monospace, monospace;
+            color: #1A237E;
+        }
+        .title {
+            padding: 30px 60px 20px;
+            font: 700 42px ui-monospace, monospace;
+            color: #1A237E;
+            line-height: 1.1;
+        }
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 60px;
+            border: 1px solid #1A237E;
+        }
+        .version-col {
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+            min-height: 400px;
+            border-right: 1px solid #1A237E;
+        }
+        .version-col:last-child {
+            border-right: none;
+        }
+        .v-tag {
+            font: 700 14px ui-monospace, monospace;
+            background: #FF6D00;
+            color: #FFFFFF;
+            padding: 4px 12px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .v-title {
+            font: 700 24px ui-monospace, monospace;
+            color: #1A237E;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .v-subtitle {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #1A237E;
+        }
+        .v-list {
+            list-style: none;
+        }
+        .v-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.4;
+        }
+        .v-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #FF6D00;
+            font-weight: bold;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 60px 25px;
+            border-top: 1px solid #1A237E;
+            font: 400 14px ui-monospace, monospace;
+            color: #455A64;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Développement & Roadmap</div>
+            <div class="page-num">06</div>
+        </div>
+        
+        <h1 class="title">Une feuille de route en trois versions</h1>
+        
+        <div class="roadmap-grid">
+            <div class="version-col">
+                <div class="v-tag">V1 — MVP</div>
+                <div class="v-title">Fiabiliser</div>
+                <div class="v-subtitle">Prévisionnel guidé</div>
+                <ul class="v-list">
+                    <li>Moteur financier déterministe</li>
+                    <li>Scénarios (Prudent / Central / Ambitieux)</li>
+                    <li>Contrôles de cohérence automatiques</li>
+                    <li>Export PDF structuré</li>
+                </ul>
+            </div>
+            
+            <div class="version-col">
+                <div class="v-tag">V2 — SMART</div>
+                <div class="v-title">Augmenter</div>
+                <div class="v-subtitle">IA contrôlée & Dossier</div>
+                <ul class="v-list">
+                    <li>Génération narrative assistée par IA</li>
+                    <li>Sources sectorielles intégrées</li>
+                    <li>Exports Word & Excel éditables</li>
+                    <li>Espace de collaboration partagé</li>
+                </ul>
+            </div>
+            
+            <div class="version-col">
+                <div class="v-tag">V3 — PRO</div>
+                <div class="v-title">Piloter</div>
+                <div class="v-subtitle">Suivi & Distribution</div>
+                <ul class="v-list">
+                    <li>Comparaison Plan vs Réel mensuelle</li>
+                    <li>Alertes d'écarts et révisions guidées</li>
+                    <li>Version White-Label pour partenaires</li>
+                    <li>Connecteurs comptables natifs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>Fabrique du Génie — Montauban, Occitanie</span>
+            <span>Document de travail confidentiel</span>
+        </div>
+    </div>
+</body>
+</html>

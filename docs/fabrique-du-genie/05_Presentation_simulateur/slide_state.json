@@ -1,0 +1,133 @@
+{
+  "project_info": {
+    "title": "Simulateur de business plan automatisé",
+    "created": 1788345881.309,
+    "last_updated": 1788346062.248,
+    "total_slides": 11
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "opportunite",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "references",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "explicabilite",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "parcours",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "mvp_financier",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "reglementaire",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "decisions",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "confiance",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 11
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Simulateur de business plan automatisé",
+      "summary": "De l’idée au pilotage : le projet de la Fabrique du Génie. Présentation synthétique.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "opportunite",
+      "title": "Une opportunité : passer du PDF au pilotage",
+      "summary": "Les lacunes des solutions existantes et la promesse d’une expérience française, pédagogique et exploitable.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "references",
+      "title": "Les meilleures pratiques sont déjà identifiées",
+      "summary": "Synthèse des fonctions à reprendre chez Propulse, CCI Business Builder, Previ’Start, PlanGuru, LivePlan, Upmetrics, Supernova, IdeaBuddy et Venturekit.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "explicabilite",
+      "title": "Le produit doit rester explicable",
+      "summary": "Séparation entre interrogation, calcul et rédaction ; hypothèses visibles ; moteur déterministe ; récit cohérent avec les chiffres.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "parcours",
+      "title": "Le parcours cible en 12 étapes",
+      "summary": "De l’idée à la fiche projet, aux hypothèses, aux scénarios, à l’export et au suivi plan/réel.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "mvp_financier",
+      "title": "Le MVP commence par un moteur financier fiable",
+      "summary": "Fonctions financières prioritaires : revenus, charges, investissements, trésorerie, résultat, bilan, BFR, seuil et scénarios.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Une feuille de route en trois versions",
+      "summary": "V1 fiabiliser, V2 augmenter avec IA contrôlée, V3 piloter avec plan/réel et distribution professionnelle.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "reglementaire",
+      "title": "Le cadre réglementaire doit être intégré dès le départ",
+      "summary": "Pas d’agrément général d’incubateur identifié, mais obligations spécifiques selon la formation, domiciliation et services réglementés.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "decisions",
+      "title": "Les décisions des 30 prochains jours",
+      "summary": "Segment MVP, secteurs pilotes, partenaires, maquettes, règles financières et qualification des ateliers.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "confiance",
+      "title": "Le facteur différenciant : la confiance",
+      "summary": "Hypothèses visibles, calculs auditables, données sourcées, IA explicative et accompagnement humain.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "closing",
+      "title": "Prochaine étape : lancer le cadrage MVP",
+      "summary": "Cahier des charges, prototype UX, validation sur cas réels et pilote avec les conseillers de la Fabrique du Génie.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

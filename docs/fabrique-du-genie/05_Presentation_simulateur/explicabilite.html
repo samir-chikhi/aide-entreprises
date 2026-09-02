@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le produit doit rester explicable</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #1A237E;
+            font-family: Georgia, serif;
+            border: 1px solid #1A237E;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding-top: 48px;
+            padding-left: 64px;
+            padding-right: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .eyebrow {
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .page-num {
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .title {
+            padding-top: 24px;
+            padding-left: 64px;
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 1.1;
+        }
+        .content-grid {
+            padding-top: 48px;
+            padding-left: 64px;
+            padding-right: 64px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .module {
+            border: 1px solid #1A237E;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+        .module-header {
+            background: #1A237E;
+            color: #FFFFFF;
+            padding-top: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 12px;
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .module-body {
+            padding-top: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-grow: 1;
+        }
+        .module-body h3 {
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 20px;
+            color: #FF6D00;
+            margin-bottom: 16px;
+        }
+        .module-body p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #455A64;
+        }
+        .pill {
+            display: inline-block;
+            background: #f0f2ff;
+            border: 1px solid #1A237E;
+            padding-top: 4px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 4px;
+            border-radius: 20px;
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-top: 16px;
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 24px;
+            border-top: 1px solid #1A237E;
+            font-family: ui-monospace, monospace;
+            font-size: 14px;
+            color: #455A64;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Architecture & Transparence</div>
+            <div class="page-num">03</div>
+        </div>
+        <h1 class="title">Le produit doit rester explicable</h1>
+        
+        <div class="content-grid">
+            <div class="module">
+                <div class="module-header">01. Interroger</div>
+                <div class="module-body">
+                    <h3>Collecte guidée</h3>
+                    <p>L'utilisateur décrit son projet en langage simple. L'IA structure les réponses en hypothèses chiffrées sans les inventer.</p>
+                    <div class="pill">Hypothèses visibles</div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="module-header">02. Calculer</div>
+                <div class="module-body">
+                    <h3>Moteur déterministe</h3>
+                    <p>Les calculs financiers sont fixes et auditables. Chaque résultat peut être tracé jusqu'à sa source initiale.</p>
+                    <div class="pill">Zéro boîte noire</div>
+                </div>
+            </div>
+            <div class="module">
+                <div class="module-header">03. Rédiger</div>
+                <div class="module-body">
+                    <h3>Récit cohérent</h3>
+                    <p>Le business plan narratif est généré uniquement à partir des données validées du moteur financier.</p>
+                    <div class="pill">Preuve par le chiffre</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Fabrique du Génie — Montauban, Occitanie</div>
+            <div>Confidentialité : Projet Interne</div>
+        </div>
+    </div>
+</body>
+</html>

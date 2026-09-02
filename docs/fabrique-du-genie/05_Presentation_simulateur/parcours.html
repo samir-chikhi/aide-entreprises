@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le parcours cible en 12 étapes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #1A237E;
+            font-family: Georgia, serif;
+            border: 1px solid #1A237E;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .eyebrow {
+            font: 700 16px ui-monospace, monospace;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .title {
+            font: 700 42px ui-monospace, monospace;
+            border-bottom: 1px solid #1A237E;
+            padding-bottom: 20px;
+        }
+        .content {
+            flex-grow: 1;
+            padding-top: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+        .step-box {
+            border: 1px solid #1A237E;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            min-height: 120px;
+            background: #f7f8fc;
+        }
+        .step-num {
+            font: 700 24px ui-monospace, monospace;
+            color: #FF6D00;
+            margin-bottom: 8px;
+        }
+        .step-title {
+            font: 700 18px ui-monospace, monospace;
+            color: #1A237E;
+            line-height: 1.2;
+        }
+        .footer {
+            padding-top: 15px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 20px;
+            font: 14px ui-monospace, monospace;
+            color: #455A64;
+            border-top: 1px solid #1A237E;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Expérience Utilisateur</div>
+            <h1 class="title">Le parcours cible en 12 étapes</h1>
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="step-box">
+                    <div class="step-num">01</div>
+                    <div class="step-title">Idée et fiche projet</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">02</div>
+                    <div class="step-title">Offre, clients et prix</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">03</div>
+                    <div class="step-title">Acquisition et ventes</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">04</div>
+                    <div class="step-title">Ressources et charges</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">05</div>
+                    <div class="step-title">Investissements et financements</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">06</div>
+                    <div class="step-title">Cadre français paramétrable</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">07</div>
+                    <div class="step-title">Prévision mensuelle et annuelle</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">08</div>
+                    <div class="step-title">Scénarios et sensibilité</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">09</div>
+                    <div class="step-title">Rédaction assistée</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">10</div>
+                    <div class="step-title">Validation conseiller</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">11</div>
+                    <div class="step-title">Export PDF, Word et Excel</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">12</div>
+                    <div class="step-title">Suivi plan/réel</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Fabrique du Génie — Montauban, Occitanie
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MVP Financier - Fabrique du Génie</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            color: #455A64;
+            font-family: Georgia, serif;
+            border: 1px solid #1A237E;
+            position: relative;
+            padding: 48px 64px 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid #1A237E;
+            padding-bottom: 16px;
+        }
+        .eyebrow {
+            font: 700 18px ui-monospace, monospace;
+            color: #FF6D00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .page-num {
+            font: 700 24px ui-monospace, monospace;
+            color: #1A237E;
+        }
+        .title {
+            font: 700 44px ui-monospace, monospace;
+            color: #1A237E;
+            margin-top: 32px;
+            line-height: 1.1;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-top: 48px;
+            border: 1px solid #1A237E;
+        }
+        .grid-item {
+            border: 1px solid #1A237E;
+            padding: 24px;
+            min-height: 180px;
+        }
+        .grid-item h3 {
+            font: 700 20px ui-monospace, monospace;
+            color: #1A237E;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .grid-item h3::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #FF6D00;
+            margin-right: 12px;
+        }
+        .list {
+            list-style: none;
+        }
+        .list li {
+            font-size: 19px;
+            line-height: 1.6;
+            padding-left: 24px;
+            position: relative;
+        }
+        .list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #FF6D00;
+            font-weight: bold;
+        }
+        .footer {
+            position: absolute;
+            bottom: 24px;
+            left: 64px;
+            right: 64px;
+            border-top: 1px solid #1A237E;
+            padding-top: 12px;
+            font: 400 14px ui-monospace, monospace;
+            color: #455A64;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="eyebrow">Stratégie Produit</div>
+            <div class="page-num">05</div>
+        </div>
+        
+        <h1 class="title">Le MVP commence par un moteur financier fiable</h1>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Modélisation des flux</h3>
+                <ul class="list">
+                    <li>Revenus par produit, service et canal</li>
+                    <li>Charges fixes, variables et effectifs</li>
+                    <li>Investissements et amortissements</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>États de synthèse</h3>
+                <ul class="list">
+                    <li>Compte de résultat (P&L) sur 3 ans</li>
+                    <li>Plan de trésorerie mensuel détaillé</li>
+                    <li>Plan de financement initial et global</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Structure & Équilibre</h3>
+                <ul class="list">
+                    <li>Bilan actif/passif automatisé</li>
+                    <li>Calcul du BFR et fonds de roulement</li>
+                    <li>Capacité d'autofinancement (CAF)</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Analyse Décisionnelle</h3>
+                <ul class="list">
+                    <li>Seuil de rentabilité et point mort</li>
+                    <li>Scénarios : Prudent, Central, Ambitieux</li>
+                    <li>Alertes de cohérence et ratios clés</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            Fabrique du Génie — Montauban, Occitanie
+        </div>
+    </div>
+</body>
+</html>
