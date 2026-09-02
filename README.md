@@ -62,3 +62,11 @@ Ce dépôt peut servir de base à un fork ou à une intégration dans un autre p
 Le workflow `.github/workflows/deploy-pages.yml` publie automatiquement le client statique après chaque push sur `main`. Pour ce dépôt, l’URL attendue est `https://samir-chikhi.github.io/aide-entreprises/` après activation de GitHub Pages dans les paramètres du dépôt ou via l’API Pages.
 
 GitHub Pages n’exécute pas Express, tRPC, OAuth, Drizzle ni les appels serveur protégés. La version publiée fonctionne donc avec le référentiel embarqué côté client. Pour activer l’authentification, la persistance, l’administration distante et les API Aides-Entreprises, il faut conserver le serveur sur un hébergement adapté et configurer l’URL d’API côté client.
+
+### Stratégie de routage GitHub Pages
+
+Vite est construit avec `base: "/aide-entreprises/"` uniquement dans GitHub Actions. Le fichier `dist/public/404.html` est une copie de `index.html`, ce qui permet à GitHub Pages de remettre l’application SPA au navigateur lors d’une URL profonde. Le routeur détecte explicitement `/aide-entreprises` et `/aide-entreprises/` afin de rendre la page d’accueil publiée sous le chemin du dépôt.
+
+GitHub Pages et son CDN peuvent conserver l’ancien `index.html` ou un ancien bundle pendant quelques minutes. Après un déploiement, utiliser un rechargement forcé du navigateur (`Ctrl+F5` ou `Cmd+Shift+R`) ; pour un contrôle technique, ajouter temporairement un paramètre de version à l’URL. Cette précaution ne contourne pas le cache côté utilisateur à long terme : elle sert uniquement à vérifier la dernière publication.
+
+L’URL canonique reste `https://samir-chikhi.github.io/aide-entreprises/`. La version Pages est statique et ne fournit pas les routes Express/tRPC, l’authentification OAuth, la persistance Drizzle ou les secrets API. Ces fonctions nécessitent un serveur séparé et une URL d’API configurée côté client.
